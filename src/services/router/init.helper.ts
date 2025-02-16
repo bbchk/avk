@@ -3,7 +3,6 @@ import { IRouter } from '/services/router/index.service';
 export default async function init(this: IRouter) {
   try {
     await this.go(location.pathname);
-    this.handleInternalLinks('inLink');
   } catch (err) {
     // TODO: display error screen
     console.error('Error during router initialization:', err);

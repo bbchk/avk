@@ -1,4 +1,5 @@
 import { IRouter } from '../services/router/index.service';
+import { ROUTE_CHANGED_EVENT } from './constants';
 
 type QuerySelector = (
   this: Document | HTMLElement,
@@ -10,22 +11,30 @@ type QuerySelectorAll = (
   args: string
 ) => NodeListOf<Element>;
 
-type AddEventListener = <K extends keyof WindowEventMap>(
+interface CustomEvents {
+  [ROUTE_CHANGED_EVENT]: CustomEvent;
+}
+
+interface AllEventsMap extends WindowEventMap, CustomEvents {
+  //
+}
+
+type AddEventListener = <K extends keyof AllEventsMap>(
   this: Window | Document | HTMLElement,
   event: K,
   listener: (
     this: Window | Document | HTMLElement,
-    ev: WindowEventMap[K]
+    ev: AllEventsMap[K]
   ) => void,
   options?: AddEventListenerOptions | boolean
 ) => void;
 
-type RemoveEventListener = <K extends keyof WindowEventMap>(
+type RemoveEventListener = <K extends keyof AllEventsMap>(
   this: Window | Document | HTMLElement,
   event: K,
   listener: (
     this: Window | Document | HTMLElement,
-    ev: WindowEventMap[K]
+    ev: AllEventsMap[K]
   ) => void,
   options?: EventListenerOptions | boolean
 ) => void;
