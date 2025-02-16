@@ -2,7 +2,11 @@
 
 .home {
   display: flex;
+  flex-flow: column;
   justify-content: center;
+  align-content: center;
+
+  width: 100%;
 }
 
 .home__heading {
@@ -10,16 +14,74 @@
   padding: 1rem;
 
   font-size: 2.5rem;
+
+  text-align: center;
 }
 
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
+/* Gallery Card */
 .gallery__card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  margin: 16px;
 }
 
+.gallery__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Figure */
 .gallery__cardFigure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
+.gallery__cardFigure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Card Caption */
 .gallery__cardCaption {
+  padding: 16px;
+  text-align: left;
+}
+
+.gallery__cardCaption h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+/* Caption List */
+.gallery__cardCaptionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__cardCaptionList li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.gallery__cardCaptionList li strong {
+  color: #333;
 }
