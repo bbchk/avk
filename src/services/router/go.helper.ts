@@ -1,7 +1,7 @@
 import routes from './routes';
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
-import reloadContent from './reloadContent';
-import { IRouter } from '/services/router/router.service';
+import reloadContent from './reloadContent.helper';
+import { IRouter } from '/services/router/index.service';
 
 async function go(
   this: IRouter,

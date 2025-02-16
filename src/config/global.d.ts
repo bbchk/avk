@@ -1,4 +1,4 @@
-import { IRouter } from '../services/router/router.service';
+import { IRouter } from '../services/router/index.service';
 
 type QuerySelector = (
   this: Document | HTMLElement,

@@ -2,7 +2,7 @@ import './assets/styles/index.scss';
 
 import './utils/dom.utils.ts';
 
-import { Router } from './services/router.service.ts';
+import { Router } from './services/router/index.service.ts';
 
 window._app = {
   router: Router

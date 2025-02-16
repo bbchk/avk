@@ -1,4 +1,4 @@
-import { IRouter } from '../router/router.service';
+import { IRouter } from './index.service';
 
 export default function handleInternalLinks(
   this: IRouter,
