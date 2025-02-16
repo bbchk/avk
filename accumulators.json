@@ -3,46 +3,62 @@
     {
       "id": "3",
       "imageUrl": "https://picsum.photos/400/400?random=3",
-      "name": "Hamster Helmets",
+      "name": "Heavy-Duty Car Battery",
       "count": 15,
       "size": {
-        "width": 50,
-        "height": 50
+        "length": 278,
+        "width": 175,
+        "height": 190
       },
-      "weight": "20g"
+      "weight": "20kg",
+      "capacity": "70Ah",
+      "voltage": "12V",
+      "cca": "650A"
     },
     {
       "id": "4",
       "imageUrl": "https://picsum.photos/400/400?random=4",
-      "name": "Parrot Parachutes",
+      "name": "Standard Car Battery",
       "count": 5,
       "size": {
-        "width": 100,
-        "height": 150
+        "length": 242,
+        "width": 175,
+        "height": 190
       },
-      "weight": "100g"
+      "weight": "18kg",
+      "capacity": "60Ah",
+      "voltage": "12V",
+      "cca": "550A"
     },
     {
       "id": "7",
       "imageUrl": "https://picsum.photos/400/400?random=7",
-      "name": "Lizard Leashes",
+      "name": "Compact Car Battery",
       "count": 7,
       "size": {
-        "width": 100,
-        "height": 5
+        "length": 207,
+        "width": 175,
+        "height": 175
       },
-      "weight": "15g"
+      "weight": "15kg",
+      "capacity": "50Ah",
+      "voltage": "12V",
+      "cca": "450A"
     },
     {
       "id": "8",
       "imageUrl": "https://picsum.photos/400/400?random=8",
-      "name": "Ferret Fedora",
+      "name": "AGM Car Battery",
       "count": 9,
       "size": {
-        "width": 60,
-        "height": 30
+        "length": 315,
+        "width": 175,
+        "height": 190
       },
-      "weight": "25g"
+      "weight": "22kg",
+      "capacity": "80Ah",
+      "voltage": "12V",
+      "cca": "750A"
     }
   ]
 }
