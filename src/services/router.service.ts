@@ -29,6 +29,7 @@ const Router: IRouter = {
     }
 
     const contentPath = routes[route] || routes['default'];
+    // TODO: don't use variable as vite cannot analyze this efficiently enough
     const { html, css } = await import(`/pages/${contentPath}/index.ts`);
     reloadContent(html, css);
     handleInternalLinks('inLink');

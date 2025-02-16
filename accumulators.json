@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "imageUrl": "https://picsum.photos/400/400?random=3",
+      "name": "Hamster Helmets",
+      "count": 15,
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "weight": "20g"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://picsum.photos/400/400?random=4",
+      "name": "Parrot Parachutes",
+      "count": 5,
+      "size": {
+        "width": 100,
+        "height": 150
+      },
+      "weight": "100g"
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://picsum.photos/400/400?random=7",
+      "name": "Lizard Leashes",
+      "count": 7,
+      "size": {
+        "width": 100,
+        "height": 5
+      },
+      "weight": "15g"
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://picsum.photos/400/400?random=8",
+      "name": "Ferret Fedora",
+      "count": 9,
+      "size": {
+        "width": 60,
+        "height": 30
+      },
+      "weight": "25g"
+    }
+  ]
+}
