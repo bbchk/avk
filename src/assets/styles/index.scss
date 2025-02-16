@@ -19,13 +19,15 @@ html {
     overflow-x: hidden;
 
     font-weight: 400;
-    color: $color-primary;
+    color: $color-blck-rich;
     background-color: $color-background;
 
     a {
       cursor: pointer;
 
-      color: red !important;
+      /* color: red !important; */
+      text-decoration: underline;
+      color: $color-primary;
     }
   }
 }

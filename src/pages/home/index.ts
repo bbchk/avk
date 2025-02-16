@@ -13,12 +13,12 @@ window.on(ROUTE_CHANGED_EVENT, (ev) => {
     if (gallery) {
       let galleryContent = '';
 
-      for (const { imageUrl, name, capacity, voltage, weight, cca } of ev.detail
+      for (const { name, capacity, voltage, weight, cca } of ev.detail
         .data as CarBattery[]) {
         galleryContent += `
     <figure class='gallery__card'>
       <figure class='gallery__cardFigure'>
-        <img src=${imageUrl} alt="${name}"/>
+        <img src="/goods_placeholder.svg" alt="${name}"/>
       </figure>
       <caption class='gallery__cardCaption'>
         <h3>${name}</h3>

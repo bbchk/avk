@@ -11,8 +11,9 @@ export default function reloadContent(html: string, css: string) {
     styleElement.innerHTML = css;
     mainElement.appendChild(styleElement);
 
-    window.scrollY = 0;
-    window.scrollX = 0;
+    // TODO: this needs to be off during development because of jumping after updating css
+    // window.scrollY = 0;
+    // window.scrollX = 0;
   }
 
   //TODO: introduce handling if main elem is not found
