@@ -5,6 +5,8 @@
 @use 'settings/reset.scss' as *;
 @use 'settings/normalize.scss' as *;
 
+@use 'comps/layout/index' as *;
+
 html {
   overscroll-behavior: none;
   overflow-x: hidden;

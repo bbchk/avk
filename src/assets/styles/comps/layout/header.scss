@@ -1,0 +1,13 @@
+@use '@styles/settings/index' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  height: 70px;
+
+  overflow: clip;
+
+  border-bottom: 1px solid $color-downplay;
+}
