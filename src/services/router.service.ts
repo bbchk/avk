@@ -1,8 +1,6 @@
 const routes: Record<string, string> = {
   '/': 'home',
-  '/about-me': 'about_me',
-  '/works': 'works',
-  '/connect': 'connect',
+  '/landing': 'landing',
   default: 'error'
 };
 
@@ -15,6 +13,7 @@ const Router: IRouter = {
   init: async () => {
     try {
       await Router.go(location.pathname);
+      handleInternalLinks('inLink');
     } catch (err) {
       // TODO: display error screen
       console.error('Error during router initialization:', err);
@@ -30,7 +29,9 @@ const Router: IRouter = {
     }
 
     const contentPath = routes[route] || routes['default'];
-    await import(`/pages/${contentPath}/index.ts`);
+    const { html, css } = await import(`/pages/${contentPath}/index.ts`);
+    reloadContent(html, css);
+    handleInternalLinks('inLink');
   }
 };
 
@@ -47,17 +48,14 @@ function reloadContent(html: string, css: string) {
     styleElement.innerHTML = css;
     mainElement.appendChild(styleElement);
 
-    // window.scrollY = 0;
-    // window.scrollX = 0;
-
-    hydrateInternalLinks('inLink');
+    window.scrollY = 0;
+    window.scrollX = 0;
   }
 
   //TODO: introduce handling if main elem is not found
 }
 
-// TODO: rename, as it is not hydration
-function hydrateInternalLinks(inLinkClass: string) {
+function handleInternalLinks(inLinkClass: string) {
   const internalLinks = $$(`a.${inLinkClass}`);
 
   internalLinks.forEach((e) => {
@@ -67,7 +65,6 @@ function hydrateInternalLinks(inLinkClass: string) {
       event.preventDefault();
 
       //TODO: create custom event for signaling of changing route to do some things asap
-
       const url = new URL(anchorElement.href).pathname;
 
       Router.go(url);

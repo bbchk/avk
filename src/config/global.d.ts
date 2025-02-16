@@ -44,11 +44,10 @@ declare global {
   // eslint-disable-next-line
   interface HTMLElement extends HasDomUtils { }
 
-  // eslint-disable-next-line
   interface Window extends HasDomUtils {
-    // _app: {
-    //   router: IRouter;
-    // };
+    _app: {
+      router: IRouter;
+    };
   }
 
   declare let $: (args: string) => Element | null;
