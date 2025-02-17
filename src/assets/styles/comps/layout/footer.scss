@@ -16,6 +16,8 @@
   padding: 2rem 0;
 
   section {
+    width: 100%;
+
     font-size: 1.1em;
     text-align: left;
     line-height: 2;
@@ -36,27 +38,26 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px repeat(2, max-content);
 
-    padding: 2rem 5rem;
-    padding-top: 0;
+    padding: 0 5rem;
+    padding-bottom: 2rem;
 
     font-size: 1.3rem;
 
     section {
       display: flex;
       flex-flow: column nowrap;
-      /* align-items: center; */
       justify-content: flex-start;
     }
   }
 
   @include media($size-mobile) {
-    grid-template-areas:
-      'logo'
-      'about'
-      'rules'
-      'contacts';
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, max-content);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: max-content;
 
     padding: 1rem;
     margin: 0 auto;

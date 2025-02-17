@@ -80,8 +80,22 @@
 
   width: 100%;
 
-  max-height: 1200px;
-  min-height: 700px;
+  /* max-height: 1200px; */
+  /* min-height: 700px; */
+
+  @include media($size-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media($size-mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media($size-mobile--small) {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+  }
 }
 
 .gallery__card {
