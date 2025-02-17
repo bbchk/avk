@@ -65,7 +65,7 @@
 
   <body>
     <header class="header">
-      <a href="/">
+      <a href="/" class="inLink">
         <svg
           class="headerLogo"
           width="150"
@@ -89,14 +89,16 @@
         </svg>
       </a>
       <nav class="header__nav">
-        <ul>
-          <li><a>Каталог товарів</a></li>
+        <ul class="header__navList">
+          <li class="header__navItem">
+            <a class="inLink" href="/catalog">Каталог товарів</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main id="main_elem"></main>
     <footer class="footer">
-      <a href="/about_us" class="footerLogo">
+      <a href="/about_us" class="footerLogo inLink">
         <svg
           class="footerLogo__svg"
           width="150"
@@ -124,10 +126,10 @@
         <!-- < -->
         <h5>Про AVAK</h5>
         <ul class="footer__aboutList">
-          <li><a>Про нас</a></li>
-          <li><a>Правила сайту</a></li>
-          <li><a>Політика конфеденційності</a></li>
-          <li><a>Співпраця з нами</a></li>
+          <li><a class="inLink">Про нас</a></li>
+          <li><a class="inLink">Правила сайту</a></li>
+          <li><a class="inLink">Політика конфеденційності</a></li>
+          <li><a class="inLink">Співпраця з нами</a></li>
         </ul>
       </section>
 
@@ -135,17 +137,17 @@
         <h5>Покупцям</h5>
 
         <ul class="footer__rulesList">
-          <li><a>Доставка та оплата</a></li>
-          <li><a>Повернення товару</a></li>
-          <li><a>Гарантійне обслуговування</a></li>
+          <li><a class="inLink">Доставка та оплата</a></li>
+          <li><a class="inLink">Повернення товару</a></li>
+          <li><a class="inLink">Гарантійне обслуговування</a></li>
         </ul>
       </section>
 
       <section class="footer__contacts">
         <h5>Контакти</h5>
         <ul class="footer__contactsList">
-          <li><a>Усі контакти</a></li>
-          <li><a>Усі локації</a></li>
+          <li><a class="inLink">Усі контакти</a></li>
+          <li><a class="inLink">Усі локації</a></li>
         </ul>
         <!-- TODO: мапа основної точки -->
         <!-- TODO: основні контакти  -->

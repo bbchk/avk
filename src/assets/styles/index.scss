@@ -14,13 +14,15 @@ html {
   font-family: $font-primary, sans-serif;
 
   body {
-    min-height: 100vh;
-
     overflow-x: hidden;
 
     font-weight: 400;
     color: $color-blck-rich;
     background-color: $color-background;
+
+    main {
+      min-height: 60vh;
+    }
 
     a {
       cursor: pointer;
