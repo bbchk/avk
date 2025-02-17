@@ -1,15 +1,14 @@
-@use "@styles/settings/index" as *;
+@use '@styles/settings/index' as *;
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: 0.5em 1em;
-
-  border-radius: 10px;
+  border: 1px solid transparent;
 
   transition:
+    border-color 0.25s ease-in-out,
     color 0.25s ease-in-out,
     background-color 0.25s ease-in-out;
 }
@@ -18,6 +17,10 @@
   @extend .button;
 
   color: $color-secondary;
+
+  /* padding: 0.5em 1em; */
+  /**/
+  /* border-radius: 10px; */
 
   background-color: $color-primary;
 
@@ -32,13 +35,19 @@
 
   color: $color-primary;
 
-  border: 1xp solid transparent;
-
   background-color: $color-secondary;
 
   &:hover {
     color: $color-secondary;
     background-color: $color-primary;
     border-color: $color-primary;
+  }
+}
+
+@mixin button--icon($hv-border-color) {
+  @extend .button;
+
+  &:hover {
+    border-color: $hv-border-color;
   }
 }

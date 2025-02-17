@@ -20,22 +20,27 @@ window.on(ROUTE_CHANGED_EVENT, (ev) => {
           break;
         }
         //
+        //
+        // <img class='gallery__cardImage' src="/goods_placeholder.svg" alt="${name}"/>
         galleryContent += `
-    <figure class='gallery__card'>
-      <img class='gallery__cardFigure' src="/goods_placeholder.svg" alt="${name}"/>
-      <figcaption class='gallery__cardCaption'>
-        <h3>${name}</h3>
-        <div class="gallery__cardBuy">
-          <div class="gallery__cardBuyPrices">
-            <del>${price_orig}<span>₴</span></del>
-            <ins>${price_discount}<span>₴<span></ins>
-          </div>
-          <button class="gallery__cardBuyBtn emoji--mono">
-            🛒
-          </button>
-        </div>
-      </figcaption>
-    </figure>
+    <div class='gallery__card'>
+      <img class='gallery__cardImage' src="https://picsum.photos/500/500" alt="${name}"/>
+      <h3 class="gallery__cardName">${name}</h3>
+      <div class="gallery__cardPrices">
+        <del>${price_orig}<span>₴</span></del>
+        <ins>${price_discount}<span>₴<span></ins>
+      </div>
+      <p class="rating--galleryCard">
+       <span class="rating__stars"> ⭐⭐⭐⭐⭐</span>
+       <span class="rating__reviewCount">0</span>
+       <span class="rating__reviewIcon">💬</span>
+      </p>
+      <div class="gallery__cardBuyBtn emoji--mono">
+        <button>
+          🛒
+        </button>
+      </div>
+    </div>
         `;
 
         // TODO: sort by real label `favorite choice` from db in the future

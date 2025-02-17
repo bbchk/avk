@@ -1,0 +1,18 @@
+@use '@styles/settings/index' as *;
+
+.rating {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+}
+
+.rating__stars {
+  font-size: 0.9em;
+}
+
+.rating__reviewCount {
+}
+
+.rating__reviewIcon {
+  font-size: 0.8em;
+}
