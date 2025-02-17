@@ -3,11 +3,11 @@ type CarBattery = {
   imageUrl: string;
   name: string;
   count: number;
-  size: {
-    length: number;
-    width: number;
-    height: number;
-  };
+  length: number;
+  width: number;
+  height: number;
+  price_discount: number;
+  price_orig: number;
   weight: string;
   capacity: string;
   voltage: string;

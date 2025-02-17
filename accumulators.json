@@ -1,184 +1,94 @@
 {
   "products": [
     {
-      "id": "9",
-      "imageUrl": "/goods_placeholder.svg",
-      "name": "Premium Car Battery",
-      "count": 12,
-      "size": {
-        "length": 300,
-        "width": 175,
-        "height": 190
-      },
-      "weight": "25kg",
-      "capacity": "90Ah",
-      "voltage": "12V",
-      "cca": "800A"
-    },
-    {
-      "id": "10",
-      "imageUrl": "https://picsum.photos/400/400?random=10",
-      "name": "Eco-Friendly Car Battery",
-      "count": 20,
-      "size": {
-        "length": 250,
-        "width": 160,
-        "height": 180
-      },
-      "weight": "16kg",
-      "capacity": "55Ah",
-      "voltage": "12V",
-      "cca": "500A"
-    },
-    {
-      "id": "11",
-      "imageUrl": "https://picsum.photos/400/400?random=11",
-      "name": "High-Performance Car Battery",
-      "count": 8,
-      "size": {
-        "length": 320,
-        "width": 175,
-        "height": 200
-      },
-      "weight": "28kg",
-      "capacity": "100Ah",
-      "voltage": "12V",
-      "cca": "850A"
-    },
-    {
-      "id": "12",
-      "imageUrl": "https://picsum.photos/400/400?random=12",
-      "name": "Compact AGM Battery",
-      "count": 6,
-      "size": {
-        "length": 210,
-        "width": 160,
-        "height": 175
-      },
-      "weight": "14kg",
-      "capacity": "45Ah",
-      "voltage": "12V",
-      "cca": "400A"
-    },
-    {
-      "id": "13",
-      "imageUrl": "https://picsum.photos/400/400?random=13",
-      "name": "Heavy-Duty Truck Battery",
-      "count": 4,
-      "size": {
-        "length": 400,
-        "width": 200,
-        "height": 220
-      },
-      "weight": "35kg",
-      "capacity": "120Ah",
-      "voltage": "24V",
-      "cca": "1000A"
-    },
-    {
-      "id": "14",
-      "imageUrl": "https://picsum.photos/400/400?random=14",
-      "name": "Lithium-Ion Car Battery",
+      "id": "cb001",
+      "imageUrl": "https://example.com/images/cb001.jpg",
+      "name": "PowerMax Ultra 12V 60Ah",
       "count": 10,
-      "size": {
-        "length": 280,
-        "width": 175,
-        "height": 190
-      },
-      "weight": "12kg",
+      "length": 242,
+      "width": 175,
+      "height": 190,
+      "price_discount": 120.99,
+      "price_orig": 150.0,
+      "weight": "15kg",
+      "capacity": "60Ah",
+      "voltage": "12V",
+      "cca": "600A"
+    },
+    {
+      "id": "cb002",
+      "imageUrl": "https://example.com/images/cb002.jpg",
+      "name": "EcoVolt Pro 12V 75Ah",
+      "count": 5,
+      "length": 278,
+      "width": 175,
+      "height": 190,
+      "price_discount": 140.5,
+      "price_orig": 170.0,
+      "weight": "17kg",
       "capacity": "75Ah",
       "voltage": "12V",
       "cca": "700A"
     },
     {
-      "id": "15",
-      "imageUrl": "https://picsum.photos/400/400?random=15",
-      "name": "Standard Truck Battery",
-      "count": 7,
-      "size": {
-        "length": 350,
-        "width": 175,
-        "height": 200
-      },
-      "weight": "30kg",
-      "capacity": "110Ah",
-      "voltage": "24V",
-      "cca": "950A"
-    },
-    {
-      "id": "16",
-      "imageUrl": "https://picsum.photos/400/400?random=16",
-      "name": "Marine Deep Cycle Battery",
-      "count": 5,
-      "size": {
-        "length": 330,
-        "width": 175,
-        "height": 200
-      },
-      "weight": "32kg",
-      "capacity": "100Ah",
-      "voltage": "12V",
-      "cca": "750A"
-    },
-    {
-      "id": "17",
-      "imageUrl": "https://picsum.photos/400/400?random=17",
-      "name": "Gel Car Battery",
-      "count": 9,
-      "size": {
-        "length": 290,
-        "width": 175,
-        "height": 190
-      },
-      "weight": "20kg",
-      "capacity": "65Ah",
-      "voltage": "12V",
-      "cca": "600A"
-    },
-    {
-      "id": "18",
-      "imageUrl": "https://picsum.photos/400/400?random=18",
-      "name": "High-Capacity AGM Battery",
-      "count": 3,
-      "size": {
-        "length": 340,
-        "width": 175,
-        "height": 210
-      },
-      "weight": "26kg",
-      "capacity": "85Ah",
-      "voltage": "12V",
-      "cca": "800A"
-    },
-    {
-      "id": "19",
-      "imageUrl": "https://picsum.photos/400/400?random=19",
-      "name": "Economy Car Battery",
-      "count": 15,
-      "size": {
-        "length": 240,
-        "width": 160,
-        "height": 180
-      },
-      "weight": "17kg",
+      "id": "cb003",
+      "imageUrl": "https://example.com/images/cb003.jpg",
+      "name": "Duracell Extreme 12V 50Ah",
+      "count": 8,
+      "length": 207,
+      "width": 175,
+      "height": 190,
+      "price_discount": 110.0,
+      "price_orig": 130.0,
+      "weight": "13kg",
       "capacity": "50Ah",
       "voltage": "12V",
-      "cca": "450A"
+      "cca": "500A"
     },
     {
-      "id": "20",
-      "imageUrl": "https://picsum.photos/400/400?random=20",
-      "name": "Off-Road Car Battery",
-      "count": 11,
-      "size": {
-        "length": 310,
-        "width": 175,
-        "height": 190
-      },
-      "weight": "24kg",
-      "capacity": "80Ah",
+      "id": "cb004",
+      "imageUrl": "https://example.com/images/cb004.jpg",
+      "name": "Optima RedTop 12V 44Ah",
+      "count": 12,
+      "length": 237,
+      "width": 172,
+      "height": 197,
+      "price_discount": 180.0,
+      "price_orig": 200.0,
+      "weight": "15.5kg",
+      "capacity": "44Ah",
       "voltage": "12V",
-      "cca": "750A"
+      "cca": "720A"
+    },
+    {
+      "id": "cb005",
+      "imageUrl": "https://example.com/images/cb005.jpg",
+      "name": "Bosch S5 Silver 12V 85Ah",
+      "count": 6,
+      "length": 315,
+      "width": 175,
+      "height": 190,
+      "price_discount": 200.0,
+      "price_orig": 230.0,
+      "weight": "20kg",
+      "capacity": "85Ah",
+      "voltage": "12V",
+      "cca": "850A"
+    },
+    {
+      "id": "cb006",
+      "imageUrl": "https://example.com/images/cb006.jpg",
+      "name": "Varta Blue Dynamic 12V 100Ah",
+      "count": 4,
+      "length": 353,
+      "width": 175,
+      "height": 190,
+      "price_discount": 250.0,
+      "price_orig": 280.0,
+      "weight": "25kg",
+      "capacity": "100Ah",
+      "voltage": "12V",
+      "cca": "900A"
     }
   ]
 }

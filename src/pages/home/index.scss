@@ -48,10 +48,21 @@
 }
 
 .gallery {
+  margin-bottom: 50px;
+}
+
+.gallery__heading {
+  padding: 2rem;
+
+  font-size: 1.5rem;
+}
+
+.gallery__content {
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
   width: 100%;
 
   max-height: 1400px;
@@ -88,44 +99,101 @@
   max-height: 65%;
   overflow: hidden;
 
-  img {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 
-    margin: 0 auto;
-    overflow: clip;
+  margin: 0 auto;
+  overflow: clip;
 
-    object-fit: cover;
-  }
+  object-fit: cover;
 }
 
 .gallery__cardCaption {
   flex: 1 1 35%;
 
-  padding: 16px;
+  text-align: center;
+
+  h3 {
+    margin: 0 0 12px;
+
+    text-align: left;
+
+    @include clampLineOn(2);
+  }
+}
+
+.gallery__cardBuy {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.gallery__cardBuyPrices {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
 
   text-align: left;
 
-  h3 {
-    font-size: 1.25rem;
-    color: #333;
-    margin: 0 0 12px;
-    text-align: center;
+  del {
+    display: block;
+    color: $color-downplay;
+  }
+
+  ins {
+    display: block;
+
+    color: $color-highlight;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Accessability */
+  ins::before,
+  ins::after {
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  ins::before {
+    content: ' [insertion start] ';
+  }
+
+  ins::after {
+    content: ' [insertion end] ';
   }
 }
 
-.gallery__cardCaptionList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.gallery__cardBuyBtn {
+  /* padding: 1rem; */
+  /* transform: scale(1.3); */
 
-  li {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 8px;
-  }
-
-  li strong {
-    color: #333;
-  }
+  font-size: 1.5rem;
+  /* width: 100%; */
+  /* height: 100%; */
 }
+
+/* .gallery__cardCaptionList { */
+/*   list-style: none; */
+/*   padding: 0; */
+/*   margin: 0; */
+/**/
+/*   li { */
+/*     font-size: 0.9rem; */
+/*     color: #555; */
+/*     margin-bottom: 8px; */
+/*   } */
+/**/
+/*   li strong { */
+/*     color: #333; */
+/*   } */
+/* } */

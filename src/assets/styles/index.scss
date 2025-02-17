@@ -32,4 +32,16 @@ html {
       color: $color-blck-rich;
     }
   }
+
+  .emoji--color {
+    font-family: 'Noto Color Emoji', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .emoji--mono {
+    font-family: 'Noto Emoji', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }

@@ -6,40 +6,41 @@ import { CarBattery } from '/types/index';
 
 window.on(ROUTE_CHANGED_EVENT, (ev) => {
   if (ev.detail.contentPath === routes['/']) {
-    console.log('yes, it is home');
-    console.log();
-
-    const gallery = $('#homeProductsGallery');
+    const gallery = $('#homeGalleryContent--first');
     if (gallery) {
       let galleryContent = '';
 
-      for (const { name, capacity, voltage, weight, cca } of ev.detail
+      // TODO: sort by real label `favorite choice` from db in the future
+      let idx = 0;
+
+      for (const { name, price_orig, price_discount } of ev.detail
         .data as CarBattery[]) {
+        // TODO: sort by real label `favorite choice` from db in the future
+        if (idx > 7) {
+          break;
+        }
+        //
         galleryContent += `
     <figure class='gallery__card'>
-      <figure class='gallery__cardFigure'>
-        <img src="/goods_placeholder.svg" alt="${name}"/>
-      </figure>
-      <caption class='gallery__cardCaption'>
+      <img class='gallery__cardFigure' src="/goods_placeholder.svg" alt="${name}"/>
+      <figcaption class='gallery__cardCaption'>
         <h3>${name}</h3>
-        <ul class="gallery__cardCaptionList">
-          <li><strong>Capacity:</strong> ${capacity}</li>
-          <li><strong>Voltage:</strong> ${voltage}</li>
-          <li><strong>Weight:</strong> ${weight}</li>
-          <li><strong>CCA:</strong> ${cca}</li>
-        </ul>
-      </caption>
+        <div class="gallery__cardBuy">
+          <div class="gallery__cardBuyPrices">
+            <del>${price_orig}<span>₴</span></del>
+            <ins>${price_discount}<span>₴<span></ins>
+          </div>
+          <button class="gallery__cardBuyBtn emoji--mono">
+            🛒
+          </button>
+        </div>
+      </figcaption>
     </figure>
         `;
-      }
-      // <div class="card">
-      //   <div class="card__image">
-      //     <img src="https://picsum.photos/400/400?random=1" alt="Standard Car Battery" />
-      //   </div>
-      //   <div class="card__content">
-      //   </div>
-      // </div>
 
+        // TODO: sort by real label `favorite choice` from db in the future
+        ++idx;
+      }
       gallery.innerHTML = galleryContent;
     }
   }
