@@ -67,9 +67,17 @@
 }
 
 .gallery__heading {
+  display: flex;
+  justify-content: space-between;
   padding: 2rem;
 
-  font-size: 1.5rem;
+  span:first-child {
+    font-size: 1.5rem;
+  }
+
+  span:last-child {
+    font-size: 1.2rem;
+  }
 }
 
 .gallery__content {
@@ -96,6 +104,14 @@
     flex-flow: column nowrap;
     gap: 30px;
   }
+}
+
+.gallery__catalogLink {
+  display: block;
+  padding-top: 3rem;
+
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .gallery__card {
