@@ -1,0 +1,44 @@
+@use '@styles/settings/index' as *;
+
+.error {
+  display: flex;
+  gap: 2rem;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5rem;
+}
+
+.error__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  background: $color-downplay;
+}
+
+.error--telescope {
+  font-size: 7rem;
+  color: white;
+}
+
+.error__message {
+  font-size: 3rem;
+}
+
+.error__code {
+  font-size: 1.5rem;
+  color: $color-decline;
+}
+
+.error__homeLink {
+  font-size: 1.5rem;
+}

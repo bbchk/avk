@@ -18,18 +18,16 @@ html {
 
     font-weight: 400;
     color: $color-blck-rich;
+
     background-color: $color-background;
 
     main {
       min-height: 60vh;
+      width: 100vw;
     }
 
     a {
       cursor: pointer;
-
-      /* color: red !important; */
-      /* text-decoration: underline; */
-      /* color: $color-primary; */
       /* TODO: create general styles for all the links */
 
       color: $color-blck-rich;
