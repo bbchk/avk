@@ -1,0 +1,15 @@
+
+[
+  {
+    "id": "7",
+    "image_url": "https://placehold.co/300x200/ff9800/FFFFFF?text=70Ah+Premium",
+    "name": "Eurokraft 70Ah Premium",
+    "capacity": "70Ah",
+    "type": "AGM",
+    "price": 79.9,
+    "price_old": 90.0,
+    "warranty": 36,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/"
+  }
+]

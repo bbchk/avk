@@ -1,94 +1,8 @@
 import "./index.scss";
 
-const products = [
-  {
-    id: "1",
-    image_url: "/monbat-eurocraft-gold-80ah-asia.png",
-    name: "Eurokraft 80Ah GOLD",
-    capacity: "80Ah", // Key for grouping
-    type: "Кислотний",
-    price: 55.0,
-    price_old: 65.0,
-    warranty: 24,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-  {
-    id: "2",
-    image_url: "https://placehold.co/300x200/b45f06/FFFFFF?text=50Ah+Asia",
-    name: "Eurokraft 50Ah Silver",
-    capacity: "50Ah", // Key for grouping
-    type: "Кислотний",
-    price: 45.0,
-    price_old: 55.0,
-    warranty: 24,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-  {
-    id: "3",
-    image_url: "https://placehold.co/300x200/0f9d58/FFFFFF?text=60Ah+Green",
-    name: "Eurokraft 60Ah GREEN",
-    capacity: "60Ah", // Key for grouping
-    type: "AGM",
-    price: 68.5,
-    price_old: 80.0,
-    warranty: 36,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-  {
-    id: "4",
-    image_url: "https://placehold.co/300x200/4285f4/FFFFFF?text=120Ah+Truck",
-    name: "Monbat 120Ah Truck",
-    capacity: "100Ah+", // Key for grouping for heavy duty
-    type: "Кислотний (Вантажний)",
-    price: 110.0,
-    price_old: 130.0,
-    warranty: 24,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-  {
-    id: "5",
-    image_url: "https://placehold.co/300x200/f44336/FFFFFF?text=80Ah+RED",
-    name: "Monbat 80Ah RED",
-    capacity: "80Ah", // Key for grouping
-    type: "Кислотний",
-    price: 58.0,
-    price_old: 68.0,
-    warranty: 24,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-  {
-    id: "6",
-    image_url: "https://placehold.co/300x200/9c27b0/FFFFFF?text=100Ah+Blue",
-    name: "Eurokraft 100Ah Blue",
-    capacity: "100Ah", // Key for grouping
-    type: "Кислотний",
-    price: 85.0,
-    price_old: 99.0,
-    warranty: 24,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-  {
-    id: "7",
-    image_url: "https://placehold.co/300x200/ff9800/FFFFFF?text=70Ah+Premium",
-    name: "Eurokraft 70Ah Premium",
-    capacity: "70Ah", // Key for grouping
-    type: "AGM",
-    price: 79.9,
-    price_old: 90.0,
-    warranty: 36,
-    origin: "Болгарія, Monbat group",
-    origin_website: "https://eurokraftbattery.com/",
-  },
-];
+const modules = import.meta.glob("./data/*.json", { eager: true });
+const products = Object.values(modules).flatMap((m) => m.default);
 
-// Map section IDs to their gallery elements
-// Note: For the '100Ah+' ID, we need to select the div that is inside the section
 const productContainers = {
   "50Ah": document.querySelector("#Ah50"),
   "60Ah": document.querySelector("#Ah60"),
@@ -130,22 +44,18 @@ const createProductCard = (p) => {
 /**
  * Main function to distribute product cards into their respective galleries.
  */
-const renderProducts = () => {
+const renderProducts = (products) => {
   products.forEach((p) => {
     const cardHtml = createProductCard(p);
     const container = productContainers[p.capacity];
-
     if (container) {
-      // Append the product card HTML to the correct gallery container
       container.innerHTML += cardHtml;
     } else {
-      // Log a warning if a product has a capacity that doesn't match a defined section
-      console.warn(
-        `Container not found for capacity: ${p.capacity}. Product ID: ${p.id}`,
-      );
+      console.warn(`No container for ${p.capacity}`);
     }
   });
 };
 
-// Execute the rendering logic once the DOM is ready
-document.addEventListener("DOMContentLoaded", renderProducts);
+document.addEventListener("DOMContentLoaded", () => {
+  renderProducts(products);
+});

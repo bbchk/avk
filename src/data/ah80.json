@@ -1,0 +1,27 @@
+
+[
+ {
+    "id": "1",
+    "image_url": "/monbat-eurocraft-gold-80ah-asia.png",
+    "name": "Eurokraft 80Ah GOLD",
+    "capacity": "80Ah",
+    "type": "Кислотний",
+    "price": 55.0,
+    "price_old": 65.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/"
+  },
+  {
+    "id": "5",
+    "image_url": "https://placehold.co/300x200/f44336/FFFFFF?text=80Ah+RED",
+    "name": "Monbat 80Ah RED",
+    "capacity": "80Ah",
+    "type": "Кислотний",
+    "price": 58.0,
+    "price_old": 68.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/"
+  }
+]

@@ -5,7 +5,7 @@
 .header {
   display: flex;
   align-items: center;
-/* justify-content: center; */
+  /* justify-content: center; */
 
   gap: 20px;
   line-height: 0;
@@ -17,7 +17,7 @@
   /* border-bottom: 1px solid $color-downplay; */
   .header__headline {
     font-size: 2rem;
-    font-family: "Ubuntu"
+    font-family: "Ubuntu";
   }
 }
 
@@ -35,6 +35,21 @@
   background-color: #f5f6f7;
 }
 
+.separator {
+  background-color: #f5f6f7;
+  border-top: 1px solid #e0e3e6;
+  border-bottom: 1px solid #e0e3e6;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #d0d3d6;
+  max-width: 140px;
+}
 /* ==================================== */
 /* PRODUCT CARD BELOW */
 /* ==================================== */
