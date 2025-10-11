@@ -1,18 +1,150 @@
-import './assets/styles/index.scss';
+/* ==================================== */
+/* LAYOUT BELOW */
+/* ==================================== */
 
-import './utils/dom.utils.ts';
+.header {
+  display: flex;
+  align-items: center;
+/* justify-content: center; */
 
-import { Router } from './services/router.service';
+  gap: 20px;
+  line-height: 0;
 
-window._app = {
-  router: Router
-};
+  height: 70px;
 
-document.addEventListener('DOMContentLoaded', () => {
-  window._app.router.init();
-});
+  overflow: clip;
 
-// document.addEventListener('DOMContentLoaded', () => {
-// const mainEl = $('main');
-// console.log(mainEl);
-// });
+  /* border-bottom: 1px solid $color-downplay; */
+  .header__headline {
+    font-size: 2rem;
+    font-family: "Ubuntu"
+  }
+}
+
+#Ah50,
+#Ah60,
+#Ah70,
+#Ah80,
+#Ah100,
+#Ah101 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  background-color: #f5f6f7;
+}
+
+/* ==================================== */
+/* PRODUCT CARD BELOW */
+/* ==================================== */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  max-width: 280px;
+  font-family: system-ui, sans-serif;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  color: #222;
+}
+
+.product-type {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.price-old {
+  color: #999;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+
+.price-current {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a8917;
+}
+
+.product-meta {
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.product-origin {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.product-origin:hover {
+  text-decoration: underline;
+}
+
+.order-button {
+  width: 100%;
+  background: #0078d7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-button:hover {
+  background: #005fa3;
+}
