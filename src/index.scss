@@ -15,7 +15,17 @@
   overflow: clip;
 
   /* border-bottom: 1px solid $color-downplay; */
-  .header__headline {
+}
+
+.header_headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+
+  width: 100%;
+
+  span {
     font-size: 2rem;
     font-family: "Ubuntu";
   }
@@ -50,6 +60,7 @@
   background-color: #d0d3d6;
   max-width: 140px;
 }
+
 /* ==================================== */
 /* PRODUCT CARD BELOW */
 /* ==================================== */
@@ -57,6 +68,7 @@
 .product-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);

@@ -1,15 +1,38 @@
-
 [
   {
     "id": "4",
-    "image_url": "https://placehold.co/300x200/4285f4/FFFFFF?text=120Ah+Truck",
-    "name": "Monbat 120Ah Truck",
-    "capacity": "100Ah+",
-    "type": "Кислотний (Вантажний)",
+    "image_url": "/monbat-eurocraft-hd-230ah-euro.png",
+    "name": "Eurokraft 230Ah Heavy Duty",
+    "capacity": "101Ah",
+    "type": "Кислотний",
     "price": 110.0,
     "price_old": 130.0,
-    "warranty": 24,
+    "warranty": 12,
     "origin": "Болгарія, Monbat group",
-    "origin_website": "https://eurokraftbattery.com/"
+    "origin_website": "https://eurokraftbattery.com/heavy-duty-vehicles/hd/"
+  },
+  {
+    "id": "4",
+    "image_url": "/kainar-crona-optimum-140ah-euro.webp",
+    "name": "Crona Optimum 140Ah",
+    "capacity": "101Ah",
+    "type": "Кислотний",
+    "price": 110.0,
+    "price_old": 130.0,
+    "warranty": 12,
+    "origin": "Казахстан, Kainar",
+    "origin_website": "https://kainar.kz/"
+  },
+  {
+    "id": "4",
+    "image_url": "/autopart-carbon-190ah-euro.webp",
+    "name": "Carbon 190Ah",
+    "capacity": "101Ah",
+    "type": "Кислотний",
+    "price": 110.0,
+    "price_old": 130.0,
+    "warranty": 12,
+    "origin": "Польша, Autopart",
+    "origin_website": "https://www.autopart.pl/en"
   }
 ]

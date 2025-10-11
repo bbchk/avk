@@ -4,12 +4,12 @@ const modules = import.meta.glob("./data/*.json", { eager: true });
 const products = Object.values(modules).flatMap((m) => m.default);
 
 const productContainers = {
-  "50Ah": document.querySelector("#Ah50"),
+  // "50Ah": document.querySelector("#Ah50"),
   "60Ah": document.querySelector("#Ah60"),
   "70Ah": document.querySelector("#Ah70"),
   "80Ah": document.querySelector("#Ah80"),
   "100Ah": document.querySelector("#Ah100"),
-  "100Ah+": document.querySelector("#Ah101"),
+  "101Ah": document.querySelector("#Ah101"),
 };
 
 const createProductCard = (p) => {
