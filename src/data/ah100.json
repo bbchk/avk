@@ -11,5 +11,17 @@
     "warranty": 24,
     "origin": "Болгарія, Monbat group",
     "origin_website": "https://eurokraftbattery.com/"
+  },
+  {
+    "id": "7",
+    "image_url": "/autopart-g-pard-110ah-euro.webp",
+    "name": "G-pard 110Ah",
+    "capacity": "110Ah",
+    "type": "Кислотний",
+    "price": 79.9,
+    "price_old": 90.0,
+    "warranty": 24,
+    "origin": "Польша, Autopart",
+    "origin_website": "https://www.autopart.pl/en"
   }
 ]

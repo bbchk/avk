@@ -2,14 +2,38 @@
 [
   {
     "id": "7",
-    "image_url": "https://placehold.co/300x200/ff9800/FFFFFF?text=70Ah+Premium",
-    "name": "Eurokraft 70Ah Premium",
+    "image_url": "/monbat-eurokraft-silver-75ah-euro.webp",
+    "name": "Eurokraft Silver 75Ah",
     "capacity": "70Ah",
-    "type": "AGM",
+    "type": "Кислотний",
     "price": 79.9,
     "price_old": 90.0,
-    "warranty": 36,
+    "warranty": 24,
     "origin": "Болгарія, Monbat group",
-    "origin_website": "https://eurokraftbattery.com/"
+    "origin_website": "https://eurokraftbattery.com/light-vehicles/silver/"
+  },
+  {
+    "id": "7",
+    "image_url": "/autopart-g-pard-78ah-euro.webp",
+    "name": "G-pard 78Ah",
+    "capacity": "70Ah",
+    "type": "Кислотний",
+    "price": 79.9,
+    "price_old": 90.0,
+    "warranty": 24,
+    "origin": "Польша, Autopart",
+    "origin_website": "https://www.autopart.pl/en"
+  },
+  {
+    "id": "7",
+    "image_url": "/autopart-fortis-75ah-euro.webp",
+    "name": "Fortis 75Ah",
+    "capacity": "70Ah",
+    "type": "Кислотний",
+    "price": 79.9,
+    "price_old": 90.0,
+    "warranty": 24,
+    "origin": "Польша, Autopart",
+    "origin_website": "https://www.autopart.pl/en"
   }
 ]

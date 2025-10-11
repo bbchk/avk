@@ -26,7 +26,7 @@ const createProductCard = (p) => {
                   <p class="product-type">${p.type}</p>
 
                   <div class="product-price">
-                    <del class="price-old">${p.price_old.toFixed(1)}<span>₴</span></del>
+                    ${p.price_old ? `<del class="price-old">${p.price_old.toFixed(1)}<span>₴</span></del>` : ''}
                     <span class="price-current">${p.price.toFixed(1)}<span>₴</span></span>
                   </div>
 
