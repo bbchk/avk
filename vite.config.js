@@ -8,10 +8,9 @@ export default defineConfig({
   publicDir: resolve(__dirname, './public'),
   envDir: __dirname,
   plugins: [Inspect()],
-  base: '/',
+  base: '/avk/',
   build: {
     outDir: resolve(__dirname, './docs'),
-    base: '/avk/',
     // sourcemap: true,
     // emptyOutDir: true
     minify: true,

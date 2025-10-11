@@ -1,7 +1,7 @@
 [
   {
     "id": "7",
-    "image_url": "/monbat-eurokraft-silver-75ah-euro.webp",
+    "image_url": "monbat-eurokraft-silver-75ah-euro.webp",
     "name": "Eurokraft Silver 75Ah",
     "capacity": "70Ah",
     "type": "Кислотний",
@@ -13,7 +13,7 @@
   },
   {
     "id": "7",
-    "image_url": "/avk/autopart-g-pard-78ah-euro.webp",
+    "image_url": "autopart-g-pard-78ah-euro.webp",
     "name": "G-pard 78Ah",
     "capacity": "70Ah",
     "type": "Кислотний",

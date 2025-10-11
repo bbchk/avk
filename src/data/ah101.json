@@ -1,7 +1,7 @@
 [
   {
     "id": "4",
-    "image_url": "/monbat-eurocraft-hd-230ah-euro.png",
+    "image_url": "monbat-eurocraft-hd-230ah-euro.png",
     "name": "Eurokraft 230Ah Heavy Duty",
     "capacity": "101Ah",
     "type": "Кислотний",
@@ -13,7 +13,7 @@
   },
   {
     "id": "4",
-    "image_url": "/kainar-crona-optimum-140ah-euro.webp",
+    "image_url": "kainar-crona-optimum-140ah-euro.webp",
     "name": "Crona Optimum 140Ah",
     "capacity": "101Ah",
     "type": "Кислотний",
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "image_url": "/autopart-carbon-190ah-euro.webp",
+    "image_url": "autopart-carbon-190ah-euro.webp",
     "name": "Carbon 190Ah",
     "capacity": "101Ah",
     "type": "Кислотний",

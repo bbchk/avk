@@ -1,7 +1,7 @@
 [
   {
     "id": "2",
-    "image_url": "/monbat-eurocraft-silver-50ah-euro.webp",
+    "image_url": "monbat-eurocraft-silver-50ah-euro.webp",
     "name": "Eurokraft 50Ah Silver",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -13,7 +13,7 @@
   },
   {
     "id": "3",
-    "image_url": "/monbat-eurocraft-silver-60ah-euro.png",
+    "image_url": "monbat-eurocraft-silver-60ah-euro.png",
     "name": "Eurokraft Silver 60Ah",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -26,7 +26,7 @@
   },
   {
     "id": "4",
-    "image_url": "/kainar-index-60ah-euro.jpg",
+    "image_url": "kainar-index-60ah-euro.jpg",
     "name": "Kainar 60Ah",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -39,7 +39,7 @@
   },
   {
     "id": "4",
-    "image_url": "/kainar-maximus-65ah-euro.jpg",
+    "image_url": "kainar-maximus-65ah-euro.jpg",
     "name": "Maximus 65Ah",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -52,7 +52,7 @@
   },
   {
     "id": "4",
-    "image_url": "/kainar-crona-optima-60ah-euro.webp",
+    "image_url": "kainar-crona-optima-60ah-euro.webp",
     "name": "Crona Optima 60Ah",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -65,7 +65,7 @@
   },
   {
     "id": "4",
-    "image_url": "/monbat-eurocraft-gold-60ah-euro.webp",
+    "image_url": "monbat-eurocraft-gold-60ah-euro.webp",
     "name": "Eurokraft Gold 60Ah",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -78,7 +78,7 @@
   },
   {
     "id": "4",
-    "image_url": "/autopart-fortis-60ah-euro.webp",
+    "image_url": "autopart-fortis-60ah-euro.webp",
     "name": "Fortis 60Ah",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -90,7 +90,7 @@
   },
   {
     "id": "4",
-    "image_url": "/tab-vesna-power-65ah-asia.webp",
+    "image_url": "tab-vesna-power-65ah-asia.webp",
     "name": "Vesna Power 65Ah (Asia)",
     "capacity": "60Ah",
     "type": "Кислотний",
@@ -102,7 +102,7 @@
   },
   {
     "id": "4",
-    "image_url": "/kainar-index-65ah-asia.jpg",
+    "image_url": "kainar-index-65ah-asia.jpg",
     "name": "Kainar 65Ah (Asia)",
     "capacity": "60Ah",
     "type": "Кислотний",
