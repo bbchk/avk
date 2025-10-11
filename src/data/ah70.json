@@ -1,4 +1,3 @@
-
 [
   {
     "id": "7",
@@ -35,5 +34,41 @@
     "warranty": 24,
     "origin": "Польша, Autopart",
     "origin_website": "https://www.autopart.pl/en"
+  },
+  {
+    "id": "7",
+    "image_url": "/monbat-eurokraft-agm-75ah-euro.png",
+    "name": "Eurokraft AGM 75Ah",
+    "capacity": "70Ah",
+    "type": "AGM",
+    "price": 79.9,
+    "price_old": 90.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/light-vehicles/agm/"
+  },
+  {
+    "id": "7",
+    "image_url": "/monbat-eurokraft-gold-75ah-euro.png",
+    "name": "Eurokraft AGM 75Ah",
+    "capacity": "70Ah",
+    "type": "AGM",
+    "price": 79.9,
+    "price_old": 90.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/light-vehicles/agm/"
+  },
+  {
+    "id": "1",
+    "image_url": "/monbat-eurocraft-gold-80ah-asia.png",
+    "name": "Eurokraft Gold 80Ah (Asia)",
+    "capacity": "70Ah",
+    "type": "Кислотний",
+    "price": 55.0,
+    "price_old": 65.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/"
   }
 ]
