@@ -11,7 +11,7 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: resolve(__dirname, './docs'),
-    // base: '/'
+    base: '/avk/',
     // sourcemap: true,
     // emptyOutDir: true
     minify: true,
