@@ -10,11 +10,11 @@ export default defineConfig({
   plugins: [Inspect()],
   base: '/',
   build: {
-    outDir: resolve(__dirname, './dist')
+    outDir: resolve(__dirname, './docs'),
     // base: '/'
     // sourcemap: true,
     // emptyOutDir: true
-    // minify: true,
+    minify: true,
   },
   esbuild: {
     // minify: true,
