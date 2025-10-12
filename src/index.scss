@@ -57,7 +57,11 @@ $breakpoints: (
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  /* padding: 0 10px; */
+
+  p {
+    margin: 5px;
+  }
 
   width: 100%;
   font-size: 2rem;
@@ -84,6 +88,10 @@ $breakpoints: (
   @include media(md) {
     flex-direction: column;
     text-align: center;
+
+    p:last-child {
+      display: none;
+    }
   }
 }
 
@@ -134,7 +142,7 @@ $breakpoints: (
 
   order: 0;
   @include media(md) {
-     order: 10;
+    order: 10;
   }
 }
 
@@ -147,7 +155,7 @@ $breakpoints: (
   line-height: 1.4;
 
   @include media(md) {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -159,7 +167,7 @@ $breakpoints: (
   gap: 25px;
 
   @include media(md) {
-   img {
+    img {
       height: 30px;
     }
   }
