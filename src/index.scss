@@ -1,20 +1,51 @@
+@use "sass:map";
 /* ==================================== */
 /* LAYOUT BELOW */
 /* ==================================== */
 
+$breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+);
+
+@mixin media($key) {
+  $size: map.get($breakpoints, $key);
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-
+  justify-content: space-between;
   gap: 20px;
-  line-height: 0;
-
-  height: 70px;
-
+  /* line-height: 0; */
+  height: 80px;
+  padding: 0 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e3;
   overflow: clip;
 
-  /* border-bottom: 1px solid $color-downplay; */
+  @include media(lg) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  img {
+    height: 80px;
+    width: auto;
+  }
+
+  @include media(lg) {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .header_headline {
@@ -24,10 +55,30 @@
   padding: 0 10px;
 
   width: 100%;
+  font-size: 2rem;
+  font-family: "Ubuntu";
 
-  span {
-    font-size: 2rem;
-    font-family: "Ubuntu";
+  @include media(md) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 16px;
+  margin: 10px;
+
+  p {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  @include media(md) {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
