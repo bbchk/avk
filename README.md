@@ -1,3 +1,9 @@
+
+
+correct mobile view
+
+
+
 <!--HOW TO WRITE COOL README FILE TUTORIAL https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/-->
 <!-- <div align="center" style="display: flex; flex-direction: column;"> -->
 <!--   <img src=".github/images/logo.svg" width="100"> -->
@@ -104,3 +110,4 @@ For those interested in delving deeper into the details of this project, I invit
 </div>
 
 -->
+
