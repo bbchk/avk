@@ -166,10 +166,14 @@ $breakpoints: (
   align-items: center;
   gap: 25px;
 
+  height: 60px;
+
   @include media(md) {
     img {
       height: 30px;
     }
+
+    height: auto;
   }
 
   img {
@@ -192,15 +196,18 @@ $breakpoints: (
   }
 
   img[src*="varta"] {
+    height: 35px;
   }
 
   img[src*="bosch"] {
   }
 
   img[src*="yuasa"] {
+    height: 70px;
   }
 
   img[src*="banner"] {
+    height: 120px;
   }
 }
 
