@@ -3,6 +3,11 @@
 /* LAYOUT BELOW */
 /* ==================================== */
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 $breakpoints: (
   sm: 480px,
   md: 768px,
@@ -110,6 +115,85 @@ $breakpoints: (
   height: 1px;
   background-color: #d0d3d6;
   max-width: 140px;
+}
+
+/* ==================================== */
+/* BRANDS BELOW */
+/* ==================================== */
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 15px;
+  margin-top: 30px;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  order: 0;
+  @include media(md) {
+     order: 10;
+  }
+}
+
+.brands__msg {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #444;
+  max-width: 600px;
+  line-height: 1.4;
+
+  @include media(md) {
+      font-size: 2rem;
+  }
+}
+
+.brands__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  @include media(md) {
+   img {
+      height: 30px;
+    }
+  }
+
+  img {
+    height: 40px;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: none;
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  img[src*="topla"] {
+  }
+
+  img[src*="exide"] {
+  }
+
+  img[src*="varta"] {
+  }
+
+  img[src*="bosch"] {
+  }
+
+  img[src*="yuasa"] {
+  }
+
+  img[src*="banner"] {
+  }
 }
 
 /* ==================================== */
