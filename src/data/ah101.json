@@ -2,11 +2,10 @@
   {
     "id": "4",
     "image_url": "monbat-eurocraft-hd-230ah-euro.png",
-    "name": "Eurokraft 230Ah Heavy Duty",
+    "name": "Eurokraft 230Ah 1500A Heavy Duty",
     "capacity": "101Ah",
     "type": "Кислотний",
-    "price": 110.0,
-    "price_old": 130.0,
+    "price": 10200.0,
     "warranty": 12,
     "origin": "Болгарія, Monbat group",
     "origin_website": "https://eurokraftbattery.com/heavy-duty-vehicles/hd/"
@@ -14,11 +13,10 @@
   {
     "id": "4",
     "image_url": "kainar-crona-optimum-140ah-euro.webp",
-    "name": "Crona Optimum 140Ah",
+    "name": "Crona Optimum 140Ah 900A",
     "capacity": "101Ah",
     "type": "Кислотний",
-    "price": 110.0,
-    "price_old": 130.0,
+    "price": 5750.0,
     "warranty": 12,
     "origin": "Казахстан, Kainar",
     "origin_website": "https://kainar.kz/"
@@ -26,11 +24,10 @@
   {
     "id": "4",
     "image_url": "autopart-carbon-190ah-euro.webp",
-    "name": "Carbon 190Ah",
+    "name": "Carbon 190Ah 1250A",
     "capacity": "101Ah",
     "type": "Кислотний",
-    "price": 110.0,
-    "price_old": 130.0,
+    "price": 7550.0,
     "warranty": 12,
     "origin": "Польша, Autopart",
     "origin_website": "https://www.autopart.pl/en"

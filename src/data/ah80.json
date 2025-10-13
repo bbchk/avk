@@ -2,11 +2,10 @@
   {
     "id": "7",
     "image_url": "autopart-g-pard-88ah-euro.webp",
-    "name": "G-pard 88Ah",
+    "name": "G-pard 88Ah 850A",
     "capacity": "80Ah",
     "type": "Кислотний",
-    "price": 79.9,
-    "price_old": 90.0,
+    "price": 4000.0,
     "warranty": 24,
     "origin": "Польша, Autopart",
     "origin_website": "https://www.autopart.pl/en"
@@ -14,13 +13,35 @@
   {
     "id": "7",
     "image_url": "autopart-fortis-85ah-euro.webp",
-    "name": "Fortis 85Ah",
+    "name": "Fortis 88Ah 850A",
     "capacity": "80Ah",
     "type": "Кислотний",
-    "price": 79.9,
-    "price_old": 90.0,
+    "price": 4200.0,
     "warranty": 24,
     "origin": "Польша, Autopart",
     "origin_website": "https://www.autopart.pl/en"
+  },
+  {
+    "id": "7",
+    "image_url": "autopart-carbon-88ah-euro.webp",
+    "name": "Carbon 88Ah 850A",
+    "capacity": "80Ah",
+    "type": "Кислотний",
+    "price": 4250.9,
+    "warranty": 24,
+    "origin": "Польша, Autopart",
+    "origin_website": "https://www.autopart.pl/en"
+  },
+  {
+    "id": "6",
+    "image_url": "monbat-eurocraft-gold-80ah-asia.png",
+    "name": "Eurokraft Gold 80Ah 800A (Asia)",
+    "capacity": "80Ah",
+    "type": "Кислотний",
+    "price": 3550.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/light-vehicles/gold/"
   }
 ]
+

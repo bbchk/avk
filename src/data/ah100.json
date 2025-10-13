@@ -3,11 +3,21 @@
   {
     "id": "6",
     "image_url": "monbat-eurokraft-gold-100ah-euro.webp",
-    "name": "Eurokraft Gold 105Ah",
+    "name": "Eurokraft Gold 105Ah 1000A",
     "capacity": "100Ah",
     "type": "Кислотний",
-    "price": 85.0,
-    "price_old": 99.0,
+    "price": 4300.0,
+    "warranty": 24,
+    "origin": "Болгарія, Monbat group",
+    "origin_website": "https://eurokraftbattery.com/light-vehicles/gold/"
+  },
+  {
+    "id": "6",
+    "image_url": "monbat-eurocraft-gold-80ah-asia.png",
+    "name": "Eurokraft Gold 100Ah 800A Asia",
+    "capacity": "100Ah",
+    "type": "Кислотний",
+    "price": 4100.0,
     "warranty": 24,
     "origin": "Болгарія, Monbat group",
     "origin_website": "https://eurokraftbattery.com/light-vehicles/gold/"
@@ -15,11 +25,10 @@
   {
     "id": "6",
     "image_url": "monbat-eurokraft-silver-100ah-euro.webp",
-    "name": "Eurokraft Silver 100Ah",
+    "name": "Eurokraft Silver 100Ah 900A",
     "capacity": "100Ah",
     "type": "Кислотний",
-    "price": 85.0,
-    "price_old": 99.0,
+    "price": 4250.0,
     "warranty": 24,
     "origin": "Болгарія, Monbat group",
     "origin_website": "https://eurokraftbattery.com/light-vehicles/silver/"
@@ -27,11 +36,10 @@
   {
     "id": "7",
     "image_url": "autopart-g-pard-110ah-euro.webp",
-    "name": "G-pard 110Ah",
+    "name": "G-pard 110Ah 1000A",
     "capacity": "100Ah",
     "type": "Кислотний",
-    "price": 79.9,
-    "price_old": 90.0,
+    "price": 5100.0,
     "warranty": 24,
     "origin": "Польша, Autopart",
     "origin_website": "https://www.autopart.pl/en"
@@ -39,13 +47,35 @@
   {
     "id": "7",
     "image_url": "exide-tech-index-100ah-euro.webp",
-    "name": "Exide 100Ah",
+    "name": "Exide 100Ah 900A",
     "capacity": "100Ah",
     "type": "Кислотний",
-    "price": 79.9,
+    "price": 4950.0,
     "price_old": 90.0,
     "warranty": 24,
     "origin": "USA, Exide Technologies",
     "origin_website": "https://www.exidegroup.com/eu/en/battery/EA1000"
+  },
+  {
+    "id": "8",
+    "image_url": "tab-vesna-power-95ah-asia.webp",
+    "name": "TAB Vesna Power 95Ah 850A (Asia)",
+    "capacity": "100Ah",
+    "type": "Кислотний",
+    "price": 4950.0,
+    "warranty": 24,
+    "origin": "Словенія, TAB d.d. company",
+    "origin_website": "https://www.tab.si/products/vesna_power/"
+  },
+  {
+    "id": "4",
+    "image_url": "kainar-maximus-100ah-euro.jpg",
+    "name": "Kainar 100Ah 1000A",
+    "capacity": "100Ah",
+    "type": "Кислотний",
+    "price": 4650.0,
+    "warranty": 24,
+    "origin": "Казахстан, Kainar",
+    "origin_website": "https://kainar.kz/"
   }
 ]
